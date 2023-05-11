@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="현대오일뱅크,HDO EV">
+    <meta name="description" content="개발 사이트 - About/해당 페이지의 설명">
+    <meta name="author" content="현대오일뱅크">
+    <meta name="generator" content="현대오일뱅크 HDO EV 화면">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="현대오일뱅크 HDO EV">
+    <meta property="og:description" content="현대오일뱅크 HDO EV 화면">
+    <meta property="og:image" content="이미지 경로 url">
+    <meta property="og:url" content="url">
+
+    <title>현대오일뱅크</title>
+
+    <!--FAVICON-->
+    <!-- <link rel="shortcut icon" href="img/favicon-32.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
+
+    <!-- common CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_query.css">
+
+</head>
+<body>
+
+    <div class="wrap">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a class="logo" href="#">현대오일뱅크</a>
+            </div>
+    
+            <ul class="sidebar-nav">
+                <li class="">
+                    <a href="02_dashboard.html">
+                        <div class="d-flex">
+                            <span class="nav-icon nav01"></span>대시보드
+                        </div>
+                    </a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav07"></span>회원 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="03_member_management.html">일반 회원</a></li>
+                        <li><a href="03_admin_memeber.html">관리자 회원</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav02"></span>충전기 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="04_charging_station_management.html">충전소 관리</a></li>
+                        <li><a href="#">결제/이용내역 조회</a></li>
+                        <li><a href="#">결제/이용내역 통계</a></li>
+                        <li><a href="#">충전단가 관리</a></li>
+                        <li><a href="#">펌웨어 관리</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav03"></span>부가서비스 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">PNC 관리</a></li>
+                        <li><a href="#">예약 관리</a></li>
+                        <li><a href="#">부가서비스 상품관리</a></li>
+                        <li><a href="#">보너스카드 생성/내역</a></li>
+                        <li><a href="#">포인트 내역</a></li>
+                        <li><a href="#">세차권 구매/사용내역</a></li>
+                        <li><a href="#">쿠폰발행/이용내역</a></li>
+                        <li><a href="#">부가서비스 통계</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav05"></span>시스템 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">항목 관리</a></li>
+                        <li><a href="#">인증서 관리</a></li>
+                        <li><a href="#">PG사 관리</a></li>
+                        <li><a href="#">기타 내역보기</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav04"></span>정산
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">매출 충전</a></li>
+                        <li><a href="#">매출 세차권</a></li>
+                        <li><a href="#">비용 충전</a></li>
+                        <li><a href="#">비용 세차권</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav08"></span>APP 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">배너/이번트</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav06"></span>고객센터
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">상담 목록</a></li>
+                        <li><a href="#">AS 내역보기</a></li>
+                        <li><a href="#">CS정산 내역보기</a></li>
+                        <li><a href="#">APP조치 내역보기</a></li>
+                        <li><a href="#">기타 내역보기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    
+        <section class="side-cont">
+            <nav class="navbar">
+                <div class="container-fluid p-0">
+                    <div class="nav-left">
+                        <a data-show="show-side-navigation1" class="show-side-btn" href="#">
+                            <img src="img/icon/menu-toggle.png" alt="메뉴 아이콘">
+                        </a>
+                        <div class="search position-relative">
+                            <img src="img/icon/icon-search.png" alt="검색 아이콘">
+                            <input type="text" class="form-control" placeholder="충전소명, ID를 검색하세요.">
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <div class="user-label">
+                            <span class="team">EV 사업팀</span>
+                            <span class="name">김지은 팀장</span>
+                        </div>
+                        <div class="user-status">
+                            <a href="#" class="user-avatar">
+                                <img src="img/icon/icon-user-avatar.png" alt="프로필">
+                            </a>
+                            <a href="#" class="notice-bell">
+                                <span class="alert-circle"></span>
+                                <img src="img/icon/icon-bell.png" alt="알람">
+                            </a>
+                            <a href="#" class="logout">
+                                <img src="img/icon/icon-logout.png" alt="로그아웃">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    
+            <div class="contents csm-cont">
+                
+                <div class="cont-head">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#mm-tab-01">일반 회원</a>
+                        </li>
+                    </ul>
+                    <div class="button-group icon-bt-group">
+                        <a href="#" class="btn btn-md btn-sub">
+                            <img src="img/icon/icon-reset-blue.png" alt="reset" class="icon-reset">
+                        </a>
+                        <a href="#" class="btn btn-md btn-secondary">
+                            <img src="img/icon/icon-search-blue.png" alt="search" class="icon-search">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="mm-tab-01">
+                        <div class="bg-box w-100">
+                            <div class="form-grid">
+                                <div class="label-form form-horizontal">
+                                    <label>부문</label>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">전체</option>
+                                            <option value="1">개인</option>
+                                            <option value="2">법인</option>
+                                            <option value="3">제휴</option>
+                                            <option value="4">그룹</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>요금제</label>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">전체</option>
+                                            <option value="1">기본단가</option>
+                                            <option value="2">후불제</option>
+                                            <option value="3">구독</option>
+                                            <option value="4">요금제</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>카드구분</label>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">전체</option>
+                                            <option value="1">Only 모바일카드</option>
+                                            <option value="2">발송완료</option>
+                                            <option value="3">발송중</option>
+                                            <option value="4">발송대기</option>
+                                            <option value="5">분신신고</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>상태</label>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">전체</option>
+                                            <option value="1">충전대기</option>
+                                            <option value="2">충전중</option>
+                                            <option value="3">예약중</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="bg-box w-100 type01">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="button-label">
+                                    <label for="">일반회원 목록</label>
+                                    <a href="#" class="btn btn-md btn-reset">
+                                        <img src="img/icon/icon-excel.png" alt="엑셀" class="icon-excel">엑셀 다운로드
+                                    </a>
+                                </div>
+                                <div class="button-group">
+                                    <a href="#" class="btn btn-md btn-reset">
+                                        <img src="img/icon/icon-trash.png" alt="삭제" class="icon-trash">삭제
+                                    </a>
+                                    <a href="#" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#">
+                                        <img src="img/icon/icon-add-w.png" alt="충전소 등록" class="icon-add">등록
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th >
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </th>
+                                            <th class="text-center">번호</th>
+                                            <th class="text-center">부문</th>
+                                            <th class="text-center">회원 ID</th>
+                                            <th class="text-center">이름</th>
+                                            <th class="text-start">멤버쉽</th>
+                                            <th class="text-start">요금제</th>
+                                            <th class="text-start">회원카드번호</th>
+                                            <th class="text-start">카드구분</th>
+                                            <th class="text-center">상태</th>
+                                            <th class="text-center">쿠폰</th>
+                                            <th class="text-center">세차권</th>
+                                            <th class="text-center">가입일</th>
+                                            <th class="text-center">최근로그인</th>
+                                            <th class="text-center">
+                                                <img src="img/icon/icon-options.png" alt="" class="tb-arrow-img">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">01</td>
+                                            <td class="text-center">개인</td>
+                                            <td class="text-center">hyundai</td>
+                                            <td class="text-center">홍길동</td>
+                                            <td class="text-start">구독1개월</td>
+                                            <td class="text-start">전기차 동호회 3K</td>
+                                            <td class="text-start">0102-029-19201--9227</td>
+                                            <td class="text-start">발송대기</td>
+                                            <td class="text-center">충전중</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">3장</td>
+                                            <td class="text-center">2023-10-10</td>
+                                            <td class="text-center">2023-12-31</td>
+                                            <td class="text-center"><a href="#"><img src="img/icon/icon-edit.png" alt="" class="btn-edit"></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tb-footer">
+                                <div class="show-list">
+                                    <span>Showing</span>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">100</option>
+                                            <option value="1">200</option>
+                                            <option value="2">300</option>
+                                        </select>
+                                    </div>
+                                    <span>Users out of 100</span>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="page-item first"><a href="#" class="page-link icon-arrow-first">First</a></li>
+                                    <li class="page-item prev"><a href="#" class="page-link icon-arrow-prev">Previous</a></li>
+                                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">7</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">8</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">9</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">10</a></li>
+                                    <li class="page-item next"><a href="#" class="page-link icon-arrow-next">Next</a></li>
+                                    <li class="page-item last"><a href="#" class="page-link icon-arrow-last">Last</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    
+    
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

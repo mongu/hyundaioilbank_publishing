@@ -594,7 +594,7 @@ textarea.success{
   background-color: var(--btn-gray-100) !important;
 }
 .same-as-selected {
-  background-color: var(--btn-gray-100) !important;
+  /* background-color: var(--btn-gray-100) !important; */
   color: var(--blue-200) !important;
   background-image: url('../img/icon/icon-option-check.png');
   background-size: 18px;
@@ -1153,13 +1153,6 @@ margin-left: 0;
 .table table{
   width: 100%;
 }
-table th{
-  padding: 0px 10px;
-  background-color: var(--gray-100);
-}
-table td{
-  padding: 0px 10px;
-}
 table thead tr{
   border-top: 1px solid #DCE0E3;
   border-bottom: 1px solid #DCE0E3;
@@ -1174,6 +1167,8 @@ table th{
   letter-spacing: -0.02em;
   text-transform: capitalize;
   color: var(--dark-default);
+  padding: 0px 10px;
+  background-color: var(--gray-100);
 }
 table td{
   font-weight: 400;
@@ -1181,7 +1176,8 @@ table td{
   line-height: 40px;
   letter-spacing: -0.02em;
   text-transform: capitalize;
-  color: var(--dark-default);
+  color: var(--gray-400);
+  padding: 0px 10px;
 }
 
 

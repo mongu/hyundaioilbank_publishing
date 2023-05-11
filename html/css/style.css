@@ -556,16 +556,34 @@
 
 
 
+/** --------------------------------
+-- 01 회원 관리
+-------------------------------- */
+.bg-box.type01{
+    margin-bottom: 0;
+    height: calc(100% - 94px);
+    overflow: hidden;
+}
+.bg-box.type02{
+    margin-bottom: 0;
+    height: calc(100% - 144px);
+    overflow: hidden;
+}
+.bg-box.type03{
+    margin-bottom: 0;
+    height: calc(100% - 194px);
+    overflow: hidden;
+}
+
+
+
+
 
 
 /** --------------------------------
 -- 02 충전기 관리
 -------------------------------- */
-.csm-cont .tab-content .tab-pane .bg-box:last-child{
-    margin-bottom: 0;
-    height: calc(100% - 144px);
-    overflow: hidden;
-}
+
 
 
 /* 충전소 등록 모달 */
@@ -682,6 +700,9 @@
 .charging-station-registration-body .body-end{
     width: 100%;
 }
+
+
+
 
 
 
