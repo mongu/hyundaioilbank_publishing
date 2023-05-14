@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="현대오일뱅크,HDO EV">
+    <meta name="description" content="개발 사이트 - About/해당 페이지의 설명">
+    <meta name="author" content="현대오일뱅크">
+    <meta name="generator" content="현대오일뱅크 HDO EV 화면">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="현대오일뱅크 HDO EV">
+    <meta property="og:description" content="현대오일뱅크 HDO EV 화면">
+    <meta property="og:image" content="이미지 경로 url">
+    <meta property="og:url" content="url">
+
+    <title>현대오일뱅크</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon-32.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- common CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_query.css">
+
+</head>
+<body>
+
+    <div class="wrap">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a class="logo" href="#">현대오일뱅크</a>
+            </div>
+    
+            <ul class="sidebar-nav">
+                <li class="">
+                    <a href="02_dashboard.html">
+                        <div class="d-flex">
+                            <span class="nav-icon nav01"></span>대시보드
+                        </div>
+                    </a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav07"></span>회원 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="03_member_management.html">일반 회원</a></li>
+                        <li><a href="03_admin_memeber.html">관리자 회원</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav02"></span>충전기 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="04_charging_station_management.html">충전소 관리</a></li>
+                        <li><a href="04_check_payment_details.html">결제/이용내역 조회</a></li>
+                        <li><a href="#">결제/이용내역 통계</a></li>
+                        <li><a href="#">충전단가 관리</a></li>
+                        <li><a href="#">펌웨어 관리</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav03"></span>부가서비스 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">PNC 관리</a></li>
+                        <li><a href="#">예약 관리</a></li>
+                        <li><a href="#">부가서비스 상품관리</a></li>
+                        <li><a href="#">보너스카드 생성/내역</a></li>
+                        <li><a href="#">포인트 내역</a></li>
+                        <li><a href="#">세차권 구매/사용내역</a></li>
+                        <li><a href="#">쿠폰발행/이용내역</a></li>
+                        <li><a href="#">부가서비스 통계</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav05"></span>시스템 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="06_system_list_management.html">항목 관리</a></li>
+                        <li><a href="06_managing_charger_data.html">충천기 데이터 관리</a></li>
+                        <li><a href="#">인증서 관리</a></li>
+                        <li><a href="#">PG사 관리</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav04"></span>정산
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">매출 충전</a></li>
+                        <li><a href="#">매출 세차권</a></li>
+                        <li><a href="#">비용 충전</a></li>
+                        <li><a href="#">비용 세차권</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav08"></span>APP 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">배너/이번트</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav06"></span>고객센터
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">상담 목록</a></li>
+                        <li><a href="#">AS 내역보기</a></li>
+                        <li><a href="#">CS정산 내역보기</a></li>
+                        <li><a href="#">APP조치 내역보기</a></li>
+                        <li><a href="#">기타 내역보기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    
+        <section class="side-cont">
+            <nav class="navbar">
+                <div class="container-fluid p-0">
+                    <div class="nav-left">
+                        <a data-show="show-side-navigation1" class="show-side-btn" href="#">
+                            <img src="img/icon/menu-toggle.png" alt="메뉴 아이콘">
+                        </a>
+                        <div class="search position-relative">
+                            <img src="img/icon/icon-search.png" alt="검색 아이콘">
+                            <input type="text" class="form-control" placeholder="충전소명, ID를 검색하세요.">
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <div class="user-label">
+                            <span class="team">EV 사업팀</span>
+                            <span class="name">김지은 팀장</span>
+                        </div>
+                        <div class="user-status">
+                            <a href="#" class="user-avatar">
+                                <img src="img/icon/icon-user-avatar.png" alt="프로필">
+                            </a>
+                            <a href="#" class="notice-bell">
+                                <span class="alert-circle"></span>
+                                <img src="img/icon/icon-bell.png" alt="알람">
+                            </a>
+                            <a href="#" class="logout">
+                                <img src="img/icon/icon-logout.png" alt="로그아웃">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="contents">
+                
+                <div class="cont-head">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#managing-charger-data-tab-01">충전기 데이터 관리</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="managing-charger-data-tab-01">
+                        <div class="bg-box w-100 mb-0">
+
+                            <div class="managing-charger-data-grid">
+
+                                <div class="label-form form-horizontal">
+                                    <label>제조사</label>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>모델</label>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>속도</label>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>펌웨어</label>
+                                    <div class="hd-select">
+                                        <select>
+                                            <option value="0">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>스팩</label>
+                                    <input type="text" placeholder="입력">
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>충전기예약</label>
+                                    <div class="btn-group select-tabs">
+                                        <input type="radio" class="btn-check" name="tab-cr" id="tab-cr1" autocomplete="off" checked="">
+                                        <label class="btn" for="tab-cr1">가능</label>
+                
+                                        <input type="radio" class="btn-check" name="tab-cr" id="tab-cr2" autocomplete="off">
+                                        <label class="btn" for="tab-cr2">불가능</label>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>PnC</label>
+                                    <div class="btn-group select-tabs">
+                                        <input type="radio" class="btn-check" name="tab-pnc" id="tab-pnc1" autocomplete="off" checked="">
+                                        <label class="btn" for="tab-pnc1">가능</label>
+                
+                                        <input type="radio" class="btn-check" name="tab-pnc" id="tab-pnc2" autocomplete="off">
+                                        <label class="btn" for="tab-pnc2">불가능</label>
+                                    </div>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>광고</label>
+                                    <div class="btn-group select-tabs">
+                                        <input type="radio" class="btn-check" name="tab-add" id="tab-add1" autocomplete="off" checked="">
+                                        <label class="btn" for="tab-add1">가능</label>
+                
+                                        <input type="radio" class="btn-check" name="tab-add" id="tab-add2" autocomplete="off">
+                                        <label class="btn" for="tab-add2">불가능</label>
+                                    </div>
+                                </div>
+                                <div><!-- 공란 --></div>
+                                <div class="label-form form-horizontal">
+                                    <label>최근등록일</label>
+                                    <input type="text" placeholder="YYYY-MM-DD" value="2023-02-02" class="calendar" readonly>
+                                </div>
+                                <div class="label-form form-horizontal">
+                                    <label>등록담당자</label>
+                                    <input type="text" value="EV사업팀 김지은" class="readonly" readonly="">
+                                </div>
+
+                            </div>
+
+                            <div class="bottom-btn-group">
+                                <button type="button" class="btn btn-md btn-reset">취소</button>
+                                <button type="button" class="btn btn-md btn-primary">저장</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

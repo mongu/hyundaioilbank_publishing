@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="현대오일뱅크,HDO EV">
+    <meta name="description" content="개발 사이트 - About/해당 페이지의 설명">
+    <meta name="author" content="현대오일뱅크">
+    <meta name="generator" content="현대오일뱅크 HDO EV 화면">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="현대오일뱅크 HDO EV">
+    <meta property="og:description" content="현대오일뱅크 HDO EV 화면">
+    <meta property="og:image" content="이미지 경로 url">
+    <meta property="og:url" content="url">
+
+    <title>현대오일뱅크</title>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon-32.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- common CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_query.css">
+
+</head>
+<body>
+
+    <div class="wrap">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a class="logo" href="#">현대오일뱅크</a>
+            </div>
+    
+            <ul class="sidebar-nav">
+                <li class="">
+                    <a href="02_dashboard.html">
+                        <div class="d-flex">
+                            <span class="nav-icon nav01"></span>대시보드
+                        </div>
+                    </a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav07"></span>회원 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="03_member_management.html">일반 회원</a></li>
+                        <li><a href="03_admin_memeber.html">관리자 회원</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav02"></span>충전기 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="04_charging_station_management.html">충전소 관리</a></li>
+                        <li><a href="04_check_payment_details.html">결제/이용내역 조회</a></li>
+                        <li><a href="#">결제/이용내역 통계</a></li>
+                        <li><a href="#">충전단가 관리</a></li>
+                        <li><a href="#">펌웨어 관리</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav03"></span>부가서비스 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">PNC 관리</a></li>
+                        <li><a href="#">예약 관리</a></li>
+                        <li><a href="#">부가서비스 상품관리</a></li>
+                        <li><a href="#">보너스카드 생성/내역</a></li>
+                        <li><a href="#">포인트 내역</a></li>
+                        <li><a href="#">세차권 구매/사용내역</a></li>
+                        <li><a href="#">쿠폰발행/이용내역</a></li>
+                        <li><a href="#">부가서비스 통계</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav05"></span>시스템 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="06_system_list_management.html">항목 관리</a></li>
+                        <li><a href="06_managing_charger_data.html">충천기 데이터 관리</a></li>
+                        <li><a href="#">인증서 관리</a></li>
+                        <li><a href="#">PG사 관리</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav04"></span>정산
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">매출 충전</a></li>
+                        <li><a href="#">매출 세차권</a></li>
+                        <li><a href="#">비용 충전</a></li>
+                        <li><a href="#">비용 세차권</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav08"></span>APP 관리
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">배너/이번트</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <div class="d-flex">
+                            <span class="nav-icon nav06"></span>고객센터
+                        </div>
+                        <span class="arrow-icon"></span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled">
+                        <li><a href="#">상담 목록</a></li>
+                        <li><a href="#">AS 내역보기</a></li>
+                        <li><a href="#">CS정산 내역보기</a></li>
+                        <li><a href="#">APP조치 내역보기</a></li>
+                        <li><a href="#">기타 내역보기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    
+        <section class="side-cont">
+            <nav class="navbar">
+                <div class="container-fluid p-0">
+                    <div class="nav-left">
+                        <a data-show="show-side-navigation1" class="show-side-btn" href="#">
+                            <img src="img/icon/menu-toggle.png" alt="메뉴 아이콘">
+                        </a>
+                        <div class="search position-relative">
+                            <img src="img/icon/icon-search.png" alt="검색 아이콘">
+                            <input type="text" class="form-control" placeholder="충전소명, ID를 검색하세요.">
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <div class="user-label">
+                            <span class="team">EV 사업팀</span>
+                            <span class="name">김지은 팀장</span>
+                        </div>
+                        <div class="user-status">
+                            <a href="#" class="user-avatar">
+                                <img src="img/icon/icon-user-avatar.png" alt="프로필">
+                            </a>
+                            <a href="#" class="notice-bell">
+                                <span class="alert-circle"></span>
+                                <img src="img/icon/icon-bell.png" alt="알람">
+                            </a>
+                            <a href="#" class="logout">
+                                <img src="img/icon/icon-logout.png" alt="로그아웃">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="contents">
+                
+                <div class="cont-head">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#system-list-management-tab-01">시스템 항목관리</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#system-list-management-tab-02">충전기 항목관리</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="system-list-management-tab-01">
+                        <div class="bg-box w-100 h-100 mb-0">
+
+                            <div class="slm-form-group">
+
+                                <div class="flex-group">
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>부문</label>
+                                            <input type="text" placeholder="입력">
+                                            <a href="#" class="btn btn-md btn-reset">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">중부</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">남부</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 활성화 START -->
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>지사</label>
+                                            <input type="text" placeholder="입력">
+                                            <a href="#" class="btn btn-md btn-reset">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">서울</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">경기남부</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">경기북부</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">대구</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">인천</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">강원</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 활성화 EMD -->
+    
+                                    <!-- slm-form 비활성화 START -->
+                                    <div class="slm-form hidden"><!-- 비활성화 : 사용시 hidden class 삭제 --> 
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>지사</label>
+                                            <input type="text" placeholder="입력" class="disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                            <a href="#" class="btn btn-md btn-reset disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                                <!-- disabled -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 비활성화 EMD -->
+                                </div>
+    
+                                <div class="flex-group">
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal">
+                                            <label>요금제</label>
+                                            <input type="text" placeholder="입력" class="payment-system-input01">
+                                            <input type="text" placeholder="할인금액 입력" class="payment-system-input02">
+                                            <div class="btn-group select-tabs">
+                                                <input type="radio" class="btn-check" name="tab-ps" id="tab-ps1" autocomplete="off" checked="">
+                                                <label class="btn" for="tab-ps1">기본단가</label>
+                        
+                                                <input type="radio" class="btn-check" name="tab-ps" id="tab-ps2" autocomplete="off">
+                                                <label class="btn" for="tab-ps2">환경부 단가</label>
+                                            </div>
+                                            <a href="#" class="btn btn-md btn-reset">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">기본단가</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">일반회원단가 50원</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">10원 할인</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">20원 할인</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">30원 할인</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">카카오T할인 50원</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">후불제</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-group">
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>충전기제조사</label>
+                                            <input type="text" placeholder="입력">
+                                            <a href="#" class="btn btn-md btn-reset">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">클린일렉스</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">기타</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-group">
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal">
+                                            <label>인증방법</label>
+                                            <input type="text" placeholder="입력" class="authentication-method-input">
+                                            <div class="btn-group select-tabs">
+                                                <input type="radio" class="btn-check" name="tab-am" id="tab-am1" autocomplete="off" checked="">
+                                                <label class="btn" for="tab-am1">회원</label>
+                        
+                                                <input type="radio" class="btn-check" name="tab-am" id="tab-am2" autocomplete="off">
+                                                <label class="btn" for="tab-am2">비회원</label>
+                                            </div>
+                                            <a href="#" class="btn btn-md btn-reset">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">QR</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">모바일 회원카드</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">실물카드</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">PnC</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">신용카드</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-group">
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>제휴충전소</label>
+                                            <input type="text" placeholder="입력">
+                                            <a href="#" class="btn btn-md btn-reset">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">카카오T</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">기타</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="system-list-management-tab-02">
+                        <div class="bg-box w-100 mb-0">
+
+                            <div class="slm-form-group">
+
+                                <div class="flex-group">
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel just-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check" checked>
+                                                        <label class="form-check-label" for="check">클린일렉스</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">기타</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex-group">
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>충전기모델</label>
+                                            <input type="text" placeholder="입력">
+                                            <a href="#" class="btn btn-md btn-reset">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check" checked>
+                                                        <label class="form-check-label" for="check">AB123</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">CD123</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">EF123</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">XX123</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 활성화 START -->
+                                    <div class="slm-form  ">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>충전기속도</label>
+                                            <input type="text" placeholder="입력" class="">
+                                            <a href="#" class="btn btn-md btn-reset ">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">200kWh</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">150kWh</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">100kWh</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">50kWh</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 활성화 EMD -->
+    
+                                    <!-- slm-form 비활성화 START -->
+                                    <div class="slm-form disabled hidden">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>충전기속도</label>
+                                            <input type="text" placeholder="입력" class="disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                            <a href="#" class="btn btn-md btn-reset disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                                <!-- disabled -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 비활성화 EMD -->
+                                </div>
+
+                                <!-- 위와 동일, 예시용 -->
+                                <div class="flex-group">
+                                    <div class="slm-form">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>충전기모델</label>
+                                            <input type="text" placeholder="입력">
+                                            <a href="#" class="btn btn-md btn-reset">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <!-- <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check" checked>
+                                                        <label class="form-check-label" for="check">AB123</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">CD123</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">EF123</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">XX123</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 활성화 START -->
+                                    <div class="slm-form  hidden">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>충전기속도</label>
+                                            <input type="text" placeholder="입력" class="">
+                                            <a href="#" class="btn btn-md btn-reset ">
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel">
+                                                <div class="checkbox-list">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">200kWh</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">150kWh</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">100kWh</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check">
+                                                        <label class="form-check-label" for="check">50kWh</label>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-button">
+                                                    <a href="#" class="btn btn-txt c-gray">선택 삭제</a>
+                                                    <a href="#" class="btn btn-txt">저장</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 활성화 EMD -->
+    
+                                    <!-- slm-form 비활성화 START -->
+                                    <div class="slm-form disabled">
+                                        <div class="label-form form-horizontal add-btn-one">
+                                            <label>충전기속도</label>
+                                            <input type="text" placeholder="입력" class="disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                            <a href="#" class="btn btn-md btn-reset disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                                <img src="img/icon/icon-add-b.png" alt="추가" class="icon-add">추가
+                                            </a>
+                                        </div>
+                                        <div class="label-form form-horizontal h-100">
+                                            <label>적용</label>
+                                            <div class="checkbox-panel disabled"><!-- 비활성화 : disabled class 추가 --> 
+                                                <!-- disabled -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slm-form 비활성화 EMD -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    
+    <!-- Javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

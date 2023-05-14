@@ -16,8 +16,8 @@
     <title>현대오일뱅크</title>
 
     <!--FAVICON-->
-    <!-- <link rel="shortcut icon" href="img/favicon-32.png" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="img/favicon-32.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- common CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -66,7 +66,7 @@
                     </a>
                     <ul class="sidebar-dropdown list-unstyled">
                         <li><a href="04_charging_station_management.html">충전소 관리</a></li>
-                        <li><a href="#">결제/이용내역 조회</a></li>
+                        <li><a href="04_check_payment_details.html">결제/이용내역 조회</a></li>
                         <li><a href="#">결제/이용내역 통계</a></li>
                         <li><a href="#">충전단가 관리</a></li>
                         <li><a href="#">펌웨어 관리</a></li>
@@ -98,10 +98,11 @@
                         <span class="arrow-icon"></span>
                     </a>
                     <ul class="sidebar-dropdown list-unstyled">
-                        <li><a href="#">항목 관리</a></li>
+                        <li><a href="06_system_list_management.html">항목 관리</a></li>
+                        <li><a href="06_managing_charger_data.html">충천기 데이터 관리</a></li>
                         <li><a href="#">인증서 관리</a></li>
                         <li><a href="#">PG사 관리</a></li>
-                        <li><a href="#">기타 내역보기</a></li>
+                        <li><a href="#">기타</a></li>
                     </ul>
                 </li>
                 <li class="has-dropdown">
@@ -307,7 +308,7 @@
                                     <a href="#" class="btn btn-md btn-reset">
                                         <img src="img/icon/icon-trash.png" alt="삭제" class="icon-trash">삭제
                                     </a>
-                                    <a href="#" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#modal-charging-station-registration02">
+                                    <a href="#" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#modal-charging-station-registration">
                                         <img src="img/icon/icon-add-w.png" alt="충전소 등록" class="icon-add">등록
                                     </a>
                                 </div>
@@ -946,7 +947,7 @@
                                     <a href="#" class="btn btn-md btn-reset">
                                         <img src="img/icon/icon-trash.png" alt="삭제" class="icon-trash">삭제
                                     </a>
-                                    <a href="#" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#modal-charging-station-registration02">
+                                    <a href="#" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#modal-charging-station-registration">
                                         <img src="img/icon/icon-add-w.png" alt="충전소 등록" class="icon-add">등록
                                     </a>
                                 </div>
@@ -1536,8 +1537,8 @@
         </section>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="modal-charging-station-registration02" tabindex="-1" aria-labelledby="" aria-hidden="true">
+    <!-- 등록 Modal -->
+    <div class="modal fade" id="modal-charging-station-registration" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-big">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1617,7 +1618,7 @@
                                         <label>주소<span class="c-red">*</span></label>
                                         <div class="position-relative">
                                             <input id="search-field" type="text" placeholder="" value="우편번호 검색" class="active">
-                                            <span toggle="#search-field" class="toggle-search toggle-icon"></span>
+                                            <span toggle="#search-field" class="toggle-search toggle-icon" data-bs-toggle="modal" data-bs-target="#search-addr"></span>
                                         </div>
                                         <input type="text" value="우편번호 검색 시 주소 자동입력" class="readonly" readonly>
                                     </div>
@@ -2015,6 +2016,54 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-md btn-reset" data-bs-dismiss="modal">취소</button>
                     <button type="button" class="btn btn-md btn-primary">저장</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="search-addr" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">주소 검색</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="search-addr-modal-body">
+                        <div class="label-form position-relative">
+                            <input id="search-field" type="text" placeholder="도로명, 건물명, 번지 검색">
+                            <span toggle="#search-field" class="toggle-search toggle-icon"></span>
+                        </div>
+                        <div class="tip">
+                            <div class="label">Tip</div>
+                            아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.
+                        </div>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    도로명 + 건물번호
+                                    <span>예&#41; 판교역로 235, 제주 첨단로 242</span>
+                                </li>
+                                <li>
+                                    지역명(동/리) + 번지
+                                    <span>예&#41; 삼평동 681, 제주 영평동 2181</span>
+                                </li>
+                                <li>
+                                    지역명(동/리) + 건물명(아파트명)
+                                    <span>예&#41; 분당 주공, 연수동 주공3차</span>
+                                </li>
+                                <li>
+                                    사서함명 + 번호
+                                    <span>예&#41; 분당우체국 사서함 1-100</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-end">
+                    <button type="button" class="btn btn-md btn-reset" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-md btn-primary">확인</button>
                 </div>
             </div>
         </div>
