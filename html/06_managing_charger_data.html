@@ -343,8 +343,8 @@
                                 </div>
                                 <div><!-- 공란 --></div>
                                 <div class="label-form form-horizontal">
-                                    <label>최근등록일</label>
-                                    <input type="text" placeholder="YYYY-MM-DD" value="2023-02-02" class="calendar" readonly>
+                                    <label for="datepicker">최근등록일</label>
+                                    <input type="text" value="" placeholder="YYYY-MM-DD" id="datepicker" class="calendar" autocomplete="off" readonly>
                                 </div>
                                 <div class="label-form form-horizontal">
                                     <label>등록담당자</label>
@@ -369,7 +369,8 @@
     <!-- Javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/layout.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/layout.js"></script>
 </body>
 </html>

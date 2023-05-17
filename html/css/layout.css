@@ -18,7 +18,7 @@
  * 8) Table
  * 9) Pagination
  * 10) Modal
- * 11) 
+ * 11) Ect
  */
 
 
@@ -547,6 +547,116 @@ textarea.success{
   background-position: center right 10px;
   cursor: pointer;
 }
+
+
+/* datepicker-calendar */
+#ui-datepicker-div {
+	display: none;
+	background-color: var(--white);
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+	margin-top: 7px !important;
+	padding: 10px 20px 20px;
+  z-index: 10 !important;
+}
+#ui-datepicker-div .ui-datepicker-header{
+  border-bottom: 1px solid var(--btn-gray-300);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#ui-datepicker-div table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.ui-datepicker-calendar thead tr{
+  border-top: none;
+  border-bottom: none;
+}
+.ui-datepicker-calendar thead th {
+	font-size: 14px;
+	font-weight: 500;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+  color: var(--dark-default);
+  background-color: transparent;
+}
+.ui-datepicker-calendar tbody tr {
+  border-bottom: none;
+}
+.ui-datepicker-calendar tbody td {
+	width: 40px;
+  height: 40px;
+	text-align: center;
+	padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+	display: block;
+	border-radius: 0.25rem;
+	line-height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+	/* transition: 0.3s all; */
+	color: var(--dark-default);
+	text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {	
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue-200);
+  color: var(--white);
+  border-radius: 40px;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+	background-color: var(--blue-200);
+	color: var(--white);
+  border-radius: 40px;
+}
+.ui-datepicker-header a.ui-corner-all {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border-radius: 0;
+	transition: 0.3s all;
+}
+/* .ui-datepicker-header a.ui-corner-all:hover {
+	background-color: #ECEFF1;
+} */
+.ui-datepicker-header a.ui-datepicker-prev {	
+  right: 50px;
+  top: 20px;
+	background-image: url('../img/icon/icon-calendar-arrow-left.png');
+	background-repeat: no-repeat;
+	background-size: 18px;
+	background-position: 50%;
+}
+.ui-datepicker-header a.ui-datepicker-next {
+  right: 20px;
+  top: 20px;
+	background-image: url('../img/icon/icon-calendar-arrow-right.png');
+	background-repeat: no-repeat;
+	background-size: 18px;
+	background-position: 50%;
+}
+.ui-datepicker-header a>span {
+	display: none;
+}
+.ui-datepicker-title {
+	font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  display: inline-block;
+  color: var(--dark-default);
+}
+.ui-datepicker-other-month.ui-datepicker-unselectable.ui-state-disabled{
+  color: var(--btn-gray-300);
+} 
+
 
 
 /* select style */
@@ -1429,7 +1539,7 @@ table td .link{
 
 
 /** --------------------------------
--- 
+-- Etc
 -------------------------------- */
 
 

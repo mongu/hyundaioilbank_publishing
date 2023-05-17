@@ -108,13 +108,45 @@ $(".toggle-password").click(function () {
 
 
 
+//datepicker calendar
+
+$( function() {
+	$( "#datepicker" ).datepicker({
+		dateFormat: "yy-mm-dd",
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        yearSuffix: '년',
+        showMonthAfterYear: true,
+        showOtherMonths: true,
+        duration: "fast",
+        beforeShow: function(input, inst) {
+
+            // Handle calendar position before showing it.
+            // It's not supported by Datepicker itself (for now) so we need to use its internal variables.
+            var calendar = inst.dpDiv;
+    
+            // Dirty hack, but we can't do anything without it (for now, in jQuery UI 1.8.20)
+            setTimeout(function() {
+                calendar.position({
+                    my: 'right top+7',
+                    at: 'right bottom',
+                    collision: 'none',
+                    of: input
+                });
+            }, 1);
+    
+        }
+	}).datepicker("setDate", new Date());
+} );
 
 
 
-
-
-
-
+$(window).resize(function () {
+    $("#ui-datepicker-div").css({
+        display: "none"
+    });
+})
 
 
 

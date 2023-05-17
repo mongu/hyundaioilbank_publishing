@@ -308,12 +308,12 @@
                                     </div>
                                 </div>
                                 <div class="label-form form-horizontal">
-                                    <label>적용시작일</label>
-                                    <input type="text" placeholder="YYYY-MM-DD" class="calendar" readonly>
+                                    <label for="datepicker">적용시작일</label>
+                                    <input type="text" value="" placeholder="YYYY-MM-DD" id="datepicker" class="calendar" autocomplete="off" readonly>
                                 </div>
                                 <div class="label-form form-horizontal">
-                                    <label>적용종료일</label>
-                                    <input type="text" placeholder="YYYY-MM-DD" class="calendar" readonly>
+                                    <label for="datepicker">적용종료일</label>
+                                    <input type="text" value="" placeholder="YYYY-MM-DD" id="datepicker" class="calendar" autocomplete="off" readonly>
                                 </div>
                             </div>
                         </div>
@@ -1509,7 +1509,8 @@
     <!-- Javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/layout.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/layout.js"></script>
 </body>
 </html>
