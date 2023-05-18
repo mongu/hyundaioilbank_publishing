@@ -1,11 +1,13 @@
 
 
 /* 1440px 반응형 */
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
     
-    
-    .board-graph .nav-tit-tabs a{
-        padding: 0px 12px;
+    .board-data-group {
+        grid-template-columns: 1fr 1fr;
+    }
+    .board-graph{
+        height: calc(100% - 352px);
     }
 }
 
