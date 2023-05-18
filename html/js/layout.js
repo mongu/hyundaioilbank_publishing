@@ -1,8 +1,8 @@
 //sidebar slide left
 $(function () {
     $(".show-side-btn").on("click", function () {
-        $(".sidebar").toggleClass("show-sidebar", 500);
-        $(".side-cont").toggleClass("fullwidth", 500);
+        $(".sidebar").toggleClass("show-sidebar", 0);
+        $(".side-cont").toggleClass("fullwidth", 0);
     });
 });
 
@@ -109,7 +109,6 @@ $(".toggle-password").click(function () {
 
 
 //datepicker calendar
-
 $( function() {
 	$( "#datepicker" ).datepicker({
 		dateFormat: "yy-mm-dd",
@@ -121,12 +120,7 @@ $( function() {
         showOtherMonths: true,
         duration: "fast",
         beforeShow: function(input, inst) {
-
-            // Handle calendar position before showing it.
-            // It's not supported by Datepicker itself (for now) so we need to use its internal variables.
             var calendar = inst.dpDiv;
-    
-            // Dirty hack, but we can't do anything without it (for now, in jQuery UI 1.8.20)
             setTimeout(function() {
                 calendar.position({
                     my: 'right top+7',
@@ -135,7 +129,6 @@ $( function() {
                     of: input
                 });
             }, 1);
-    
         }
 	}).datepicker("setDate", new Date());
 } );

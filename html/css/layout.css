@@ -803,17 +803,18 @@ textarea.success{
 .sidebar {
   background-color: var(--sidebar-bg-color);
   width: var(--sidebar-width);
-  transition: all .3s ease-in-out;
+  /* transition: all .3s ease-in-out; */
   transform: translateX(0);
   z-index: 10;
   height: 100%;
   border-radius: 10px;
+  display: block !important;
 }
 
 .sidebar.show-sidebar ~ .side-cont .navbar,
 .sidebar.show-sidebar ~ .side-cont .contents{
   margin-left: 0;
-  transition: all .3s ease-in-out;
+  /* transition: all .3s ease-in-out; */
 }
 
 .sidebar .sidebar-header{
@@ -995,7 +996,7 @@ textarea.success{
 
 .show-sidebar {
   /* transform: translateX(-210px); */
-  display: none;
+  display: none !important;
 }
 
 
@@ -1023,7 +1024,7 @@ textarea.success{
 }
 
 .side-cont.fullwidth {
-margin-left: 0;
+  margin-left: 0;
   /* width: calc(100% - 28px); */
   width: 100%;
   /* min-width: 1440px; */
