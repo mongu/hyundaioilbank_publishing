@@ -234,7 +234,7 @@ textarea::placeholder {
 .btn-reset.active {
   color: var(--dark-default) !important;
   background-color: var(--btn-gray-100) !important;
-  border: none !important;
+  border: 1px solid var(--btn-gray-100) !important;
 }
 
 .btn-sub {
@@ -253,7 +253,7 @@ textarea::placeholder {
 .btn-sub.active {
   color: var(--blue-200) !important;
   background-color: var(--btn-gray-100) !important;
-  border: none !important;
+  border: 1px solid var(--btn-gray-100) !important;
 }
 
 .icon-btn{
@@ -557,7 +557,7 @@ textarea.success{
   border-radius: 4px;
 	margin-top: 7px !important;
 	padding: 10px 20px 20px;
-  z-index: 10 !important;
+  z-index: 1100 !important;
 }
 #ui-datepicker-div .ui-datepicker-header{
   border-bottom: 1px solid var(--btn-gray-300);
@@ -793,6 +793,178 @@ textarea.success{
 }
 
 
+
+
+/* switch */
+.form-switch{
+  padding: 0;
+  align-items: center !important;
+}
+.form-switch .form-check-input{
+  width: 36px !important;
+  height: 20px !important;
+  border-radius: 20px !important;
+  border: none !important;
+  background-size: 22px;
+  background-color: var(--gray-200);
+  background-image: url('../img/switch-circle.svg') !important;
+  background-position: left -1px center;
+}
+.form-switch .form-check-input:checked{
+  background-color: #2D8EFF;
+  background-position: right -1px center;
+}
+
+
+/* timepicker */
+.timepicker1,
+.timepicker2{
+  cursor: pointer;
+  background-image: url('../img/icon/icon-arrow-up-rounded-d.png');
+  background-size: 20px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+}
+
+.wickedpicker {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+  background: var(--white);
+  box-shadow: 0px 4px 20px rgba(170, 169, 184, 0.1);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--dark-default);
+  padding: 20px;
+  width: 206px;
+  height: 141px;
+  display: none; 
+  z-index: 1050; 
+}
+
+.wickedpicker__title {
+  display: none;
+}
+
+.wickedpicker__close {
+  -webkit-transform: translateY(-25%);
+  -moz-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  -o-transform: translateY(-25%);
+  transform: translateY(-25%);
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  color: #34495e;
+  cursor: pointer;
+}
+
+.wickedpicker__close:before {
+  content: "✕";
+}
+
+.wickedpicker__controls {
+  padding: 0;
+  line-height: normal;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.wickedpicker__controls__control, 
+.wickedpicker__controls__control--separator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+
+.wickedpicker__controls__control-up, 
+.wickedpicker__controls__control-down {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.wickedpicker__controls__control-up {
+  background-image: url('../img/icon/icon-control-up.png');
+  background-size: 20px;
+}
+
+.wickedpicker__controls__control-down {
+  background-image: url('../img/icon/icon-control-down.png');
+  background-size: 20px;
+}
+
+.wickedpicker__controls__control--separator {
+  width: 5px;
+}
+
+
+.hover-state {
+  color: #3498db;
+}
+
+.fontello:before, 
+.wickedpicker__controls__control-up:before, 
+.fontello-after:after, 
+.wickedpicker__controls__control-down:after {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clearable-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.clearable-picker > .hasWickedpicker {
+  padding-right: 1em;
+}
+
+.clearable-picker > .hasWickedpicker::-ms-clear {
+  display: none;
+}
+
+.clearable-picker > [data-clear-picker] {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0 0.3em 0.2em;
+  line-height: 1;
+  color: #bababa;
+  cursor: pointer;
+}
+
+.clearable-picker > [data-clear-picker]:hover {
+  color: #a1a1a1;
+}
 
 
 
@@ -1252,7 +1424,8 @@ textarea.success{
 
 .btn .icon-trash,
 .btn .icon-excel,
-.btn .icon-add{
+.btn .icon-add,
+.btn .icon-remove{
   width: 18px;
   height: 18px;
 }

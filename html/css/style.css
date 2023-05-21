@@ -35,9 +35,9 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background-image: url('../img/login-background.png');
+    /* background-image: url('../img/login-background.png'); */
     background-size: cover;
-    background-color: #DCEAF5;
+    background-color: #EEF0F4;
     position: relative;
 }
 .login-wrap .login-box{
@@ -47,15 +47,16 @@
     padding: 80px 60px;
     gap: 30px;
 
-    width: 480px;
+    width: 500px;
     height: auto;
 
     background: #FFFFFF;
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.04);
     border-radius: 30px;
 
     position: absolute;
-    right: 65%
+    /* right: 65%; */
+    left: 190px;
 }
 .login-wrap .login-box .logo{
     display: flex;
@@ -70,6 +71,26 @@
 .login-wrap .login-box .label-form{
     margin-top: 20px;
 }
+.login-wrap .login-box .nav-tabs{
+    display: flex;
+}
+.login-wrap .login-box .nav-tabs .nav-item{
+    width: 50%;
+    background-color: var(--gray-100);
+}
+.login-wrap .login-box .nav-tabs .nav-item a{
+    text-align: center;
+    color: var(--gray-500);
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 0 10px;
+    line-height: 50px;
+}
+.login-wrap .login-box .nav-tabs .nav-item a.active{
+    color: var(--dark-default);
+}
+
 .login-wrap .login-box .label-form:first-child{
     margin-top: 0;
 }
@@ -92,14 +113,22 @@
     border: 1px solid var(--blue-200);
 }
 
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.login-form .btn-primary{
+    margin-top: 30px;
+}
 
 
 .login-form-bottom{
     display: flex;
     align-items: center;
-    gap: 20px;
-    justify-content: center;
     width: 100%;
+    margin-top: 30px;
+    justify-content: center;
 }
 .login-form-bottom a{
     font-size: 14px;
@@ -108,6 +137,7 @@
     align-items: center;
     text-align: center;
     color: #747272;
+    text-decoration: underline;
 }
 .login-form-bottom .bar{
     width: 1px;
@@ -128,21 +158,26 @@
     animation-direction: alternate;
 
     position: absolute;
-    right: 523px;
-    bottom: 210px;
+    right: 480px;
+    bottom: 200px;
 }
 .login-wrap .station-animation .car-img.loof{
     animation-iteration-count: infinite;
 }
+
+.login-wrap .charging-station{
+    width: 1222px;
+}
+
 @-webkit-keyframes car-img {
     0% {
-        right: 723px;
-        bottom: 125px;
+        right: 653px;
+        bottom: 130px;
     }
 
     100% {
-        right: 523px;
-        bottom: 210px;
+        right: 480px;
+        bottom: 200px;
     }
 }
 
@@ -162,10 +197,11 @@
 .dashboard-page01{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 20px;
     width: 100%;
     height: 100%;
+}
+.dashboard-page01 .bg-box{
     margin-bottom: 0;
 }
 .board-top{
@@ -174,10 +210,11 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 20px;
+    height: 650px;
 }
 .board-left{
     width: 600px;
-    height: 650px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +288,7 @@
 
 .dashboard-map{
     width: 600px;
-    height: 540px;
+    height: calc(100% - 110px);
     border-radius: 6px;
     display: flex;
     flex-direction: column;
@@ -275,7 +312,7 @@
 
 .board-right{
     width: calc(100% - 620px);
-    height: 650px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -760,6 +797,20 @@
 .search-addr-modal-body .desc li span{
     color: var(--gray-400);
     display: block;
+}
+
+
+
+/* 충전기 등록 모달 */
+.registration-charger-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.charging-unit-price{
+    margin-top: 20px;
+    width: 100% !important;
 }
 
 
